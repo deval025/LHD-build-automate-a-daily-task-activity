@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="704.666666666667,1656" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="701.333333333333,510.666666666667" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -65,19 +65,15 @@
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="714.666666666667,1591.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_6">
+  <Sequence sap:VirtualizedContainerService.HintSize="550.666666666667,446" sap2010:WorkflowViewState.IdRef="Sequence_6">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence sap:VirtualizedContainerService.HintSize="672.666666666667,1499.33333333333" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence sap:VirtualizedContainerService.HintSize="508.666666666667,354" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <Sequence.Variables>
-        <Variable x:TypeArguments="x:Int32" Name="i">
-          <Variable.Default>
-            <Literal x:TypeArguments="x:Int32" Value="49" />
-          </Variable.Default>
-        </Variable>
+        <Variable x:TypeArguments="x:Int32" Default="49" Name="i" />
         <Variable x:TypeArguments="ui:Browser" Name="Uibrowser" />
       </Sequence.Variables>
       <sap:WorkflowViewStateService.ViewState>
@@ -85,29 +81,29 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:OpenBrowser NewSession="{x:Null}" Private="{x:Null}" BrowserType="Firefox" CommunicationMethod="Native" DisplayName="Private: Open Browser" Hidden="True" sap:VirtualizedContainerService.HintSize="630.666666666667,1314.66666666667" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[Uibrowser]" Url="https://www1.nseindia.com/live_market/dynaContent/live_watch/option_chain/optionKeys.jsp">
+      <ui:OpenBrowser NewSession="{x:Null}" Private="{x:Null}" BrowserType="Firefox" CommunicationMethod="Native" DisplayName="Private: Open Browser" Hidden="True" sap:VirtualizedContainerService.HintSize="466.666666666667,170" sap2010:WorkflowViewState.IdRef="OpenBrowser_1" UiBrowser="[Uibrowser]" Url="https://www1.nseindia.com/live_market/dynaContent/live_watch/option_chain/optionKeys.jsp">
         <ui:OpenBrowser.Body>
           <ActivityAction x:TypeArguments="x:Object">
             <ActivityAction.Argument>
               <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
             </ActivityAction.Argument>
-            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="596.666666666667,1212" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="200,68" sap2010:WorkflowViewState.IdRef="Sequence_1">
               <sap:WorkflowViewStateService.ViewState>
                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
                   <x:Boolean x:Key="IsPinned">False</x:Boolean>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:InterruptibleWhile DisplayName="While" sap:VirtualizedContainerService.HintSize="554.666666666667,1120" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
+              <ui:InterruptibleWhile DisplayName="While" sap:VirtualizedContainerService.HintSize="554.666666666667,1116.66666666667" sap2010:WorkflowViewState.IdRef="InterruptibleWhile_1">
                 <ui:InterruptibleWhile.Body>
-                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="518,950.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="518,948.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_5">
                     <sap:WorkflowViewStateService.ViewState>
                       <scg:Dictionary x:TypeArguments="x:String, x:Object">
                         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         <x:Boolean x:Key="IsPinned">False</x:Boolean>
                       </scg:Dictionary>
                     </sap:WorkflowViewStateService.ViewState>
-                    <Assign sap:VirtualizedContainerService.HintSize="476,62" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign sap:VirtualizedContainerService.HintSize="476,61.3333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
                       <Assign.To>
                         <OutArgument x:TypeArguments="x:Int32">[i]</OutArgument>
                       </Assign.To>
@@ -115,7 +111,7 @@
                         <InArgument x:TypeArguments="x:Int32">[i-1]</InArgument>
                       </Assign.Value>
                     </Assign>
-                    <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="476,756.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                    <Sequence DisplayName="Data Scraping" sap:VirtualizedContainerService.HintSize="476,755.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_4">
                       <Sequence.Variables>
                         <Variable x:TypeArguments="sd:DataTable" Default="[New System.Data.DataTable]" Name="ExtractDataTable" />
                       </Sequence.Variables>
@@ -124,13 +120,13 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Attach Browser 'NSE Natio Page'" sap:VirtualizedContainerService.HintSize="434,664.666666666667" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="b2e118aee2dcfac08e035b57cdef5ec1" Selector="&lt;html app='firefox.exe' title='NSE - National Stock Exchange of India Ltd.' /&gt;">
+                      <ui:BrowserScope Browser="{x:Null}" SearchScope="{x:Null}" TimeoutMS="{x:Null}" UiBrowser="{x:Null}" BrowserType="Firefox" DisplayName="Attach Browser 'NSE Natio Page'" sap:VirtualizedContainerService.HintSize="434,663.333333333333" sap2010:WorkflowViewState.IdRef="BrowserScope_1" InformativeScreenshot="b2e118aee2dcfac08e035b57cdef5ec1" Selector="&lt;html app='firefox.exe' title='NSE - National Stock Exchange of India Ltd.' /&gt;">
                         <ui:BrowserScope.Body>
                           <ActivityAction x:TypeArguments="x:Object">
                             <ActivityAction.Argument>
                               <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                             </ActivityAction.Argument>
-                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,518.666666666667" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,517.333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -168,7 +164,7 @@
                                   </ui:Target>
                                 </ui:ExtractData.Target>
                               </ui:ExtractData>
-                              <ui:AppendCsvFile Encoding="{x:Null}" DataTable="[ExtractDataTable]" Delimitator="Comma" DisplayName="Append to CSV" FilePath="stock_data.csv" sap:VirtualizedContainerService.HintSize="334,134.666666666667" sap2010:WorkflowViewState.IdRef="AppendCsvFile_1" />
+                              <ui:AppendCsvFile Encoding="{x:Null}" DataTable="[ExtractDataTable]" Delimitator="Comma" DisplayName="Append to CSV" FilePath="stock_data.csv" sap:VirtualizedContainerService.HintSize="334,133.333333333333" sap2010:WorkflowViewState.IdRef="AppendCsvFile_1" />
                             </Sequence>
                           </ActivityAction>
                         </ui:BrowserScope.Body>
@@ -190,7 +186,7 @@
           </ActivityAction>
         </ui:OpenBrowser.Body>
       </ui:OpenBrowser>
-      <ui:CloseApplication DisplayName="Close Application" sap:VirtualizedContainerService.HintSize="630.666666666667,52.6666666666667" sap2010:WorkflowViewState.IdRef="CloseApplication_1">
+      <ui:CloseApplication DisplayName="Close Application" sap:VirtualizedContainerService.HintSize="466.666666666667,52" sap2010:WorkflowViewState.IdRef="CloseApplication_1">
         <ui:CloseApplication.Target>
           <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Element="[Uibrowser]" Id="9cbba205-2373-4cf4-97cf-60319a54af57">
             <ui:Target.TimeoutMS>
